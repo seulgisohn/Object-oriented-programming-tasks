@@ -4,25 +4,25 @@
 using namespace std;
 
 int main() {
-    //º¯¼ö¸¦ ¼±¾ğÇÑ´Ù.
+    //ë³€ìˆ˜ë¥¼ ì„ ì–¸í•œë‹¤.
     string name1, name2, name3;
     unsigned int plus1, plus2, plus3;
     int minus1, minus2, minus3;
 
-    //Ã¹¹øÂ°, µÎ¹øÂ°, ¼¼¹øÂ° »ç¶÷ÀÇ Á¤º¸¸¦ ÀÔ·ÂÇÑ´Ù.
-    cout << "ÀÌ¸§, ¼öÀÔ, ÁöÃâ: ";
+    //ì²«ë²ˆì§¸, ë‘ë²ˆì§¸, ì„¸ë²ˆì§¸ ì‚¬ëŒì˜ ì •ë³´ë¥¼ ì…ë ¥í•œë‹¤.
+    cout << "ì´ë¦„, ìˆ˜ì…, ì§€ì¶œ: ";
     cin >> name1 >> plus1 >> minus1;
 
-    cout << "ÀÌ¸§, ¼öÀÔ, ÁöÃâ: ";
+    cout << "ì´ë¦„, ìˆ˜ì…, ì§€ì¶œ: ";
     cin >> name2 >> plus2 >> minus2;
 
-    cout << "ÀÌ¸§, ¼öÀÔ, ÁöÃâ: ";
+    cout << "ì´ë¦„, ìˆ˜ì…, ì§€ì¶œ: ";
     cin >> name3 >> plus3 >> minus3;
 
 
 
-    //ÀÌ¸§, ¼öÀÔ, ÁöÃâÀ» Å×ÀÌºí Çü½ÄÀ¸·Î Ãâ·ÂÇÑ´Ù.
-    cout << "\nÀÌ¸§       ¼öÀÔ       ÁöÃâ" << endl;
+    //ì´ë¦„, ìˆ˜ì…, ì§€ì¶œì„ í…Œì´ë¸” í˜•ì‹ìœ¼ë¡œ ì¶œë ¥í•œë‹¤.
+    cout << "\nì´ë¦„       ìˆ˜ì…       ì§€ì¶œ" << endl;
     cout << setw(10) << left << name1 << setw(10) << plus1 << setw(10) << minus1 << endl;
     cout << setw(10) << left << name2 << setw(10) << plus2 << setw(10) << minus2 << endl;
     cout << setw(10) << left << name3 << setw(10) << plus3 << setw(10) << minus3 << endl;
@@ -31,16 +31,16 @@ int main() {
     int balance2 = plus2 - minus2;
     int balance3 = plus3 - minus3;
 
-    cout << "\nÀÜ¾× = " << balance1 << " (" << name1 << ")" << endl;
-    cout << "ÀÜ¾× = " << balance2 << " (" << name2 << ")" << endl;
-    cout << "ÀÜ¾× = " << balance3 << " (" << name3 << ")" << endl;
+    cout << "\nì”ì•¡ = " << balance1 << " (" << name1 << ")" << endl;
+    cout << "ì”ì•¡ = " << balance2 << " (" << name2 << ")" << endl;
+    cout << "ì”ì•¡ = " << balance3 << " (" << name3 << ")" << endl;
 
-    //Æò±Õ ÀÜ¾×À» °è»êÇÑ´Ù.
+    //í‰ê·  ì”ì•¡ì„ ê³„ì‚°í•œë‹¤.
     double average_balance = (balance1 + balance2 + balance3) / 3.0;
 
-    //¼Ò¼öÁ¡ 3ÀÚ¸®±îÁö Æò±Õ ÀÜ¾×À» Ãâ·ÂÇÑ´Ù
+    //ì†Œìˆ˜ì  3ìë¦¬ê¹Œì§€ í‰ê·  ì”ì•¡ì„ ì¶œë ¥í•œë‹¤
     cout << fixed << setprecision(3);
-    cout << "\nÆò±ÕÀÜ¾× = " << average_balance << endl;
+    cout << "\ní‰ê· ì”ì•¡ = " << average_balance << endl;
 
     return 0;
 }
